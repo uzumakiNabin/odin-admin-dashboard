@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://kit.fontawesome.com/d9529804a1.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/d9529804a1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title>Admin Dashboard</title>
@@ -13,42 +13,46 @@
     <div class="container">
         <div class="navContainer">
             <div class="navHeader">
-                <div><i class="fa-solid fa-frame"></i></div>
+                <i class="fa-solid fa-dolly"></i>
                 <h1 class="title">Dashboard</h1>
             </div>
-            <div class="mainLinks">
+            <div class="mainLinks verticalLinks">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><i class="fa-solid fa-home"></i>Home</li>
+                    <li><i class="fa-solid fa-id-card"></i>Profile</li>
+                    <li><i class="fa-solid fa-message"></i>Messages</li>
+                    <li><i class="fa-solid fa-clock"></i>History</li>
+                    <li><i class="fa-solid fa-list-check"></i>Tasks</li>
+                    <li><i class="fa-solid fa-users"></i>Communities</li>
                 </ul>
             </div>
-            <div class="preferenceLinks">
+            <div class="preferenceLinks verticalLinks">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><i class="fa-solid fa-gear"></i>Settings</li>
+                    <li><i class="fa-solid fa-headset"></i>Support</li>
+                    <li><i class="fa-solid fa-shield"></i>Privacy</li>
                 </ul>
             </div>
         </div>
         <div class="bodyContainer">
             <div class="header">
                 <div class="topHeader">
-                    <p><i class="fa-solid fa-magnifying-glass"></i></p>
-                    <input type="text" name="searchValue" id="search">
-                    <i class="fa-solid fa-bell"></i>
-                    <img src="" alt="small-profile-picture">
-                    <span id="profileName">prof-name</span>
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="searchValue" id="search">
+                    </div>
+                    <div class="userInfo">
+                        <i class="fa-solid fa-bell"></i>
+                        <img src="./images/male-user.png" alt="small-profile-picture">
+                        <span id="profileName">Morgan Oakley</span>
+                    </div>
                 </div>
                 <div class="profileHeader">
                     <div class="profileInfo">
-                        <img src="" alt="large-profile-picture">
+                        <img src="./images/male-user.png" alt="large-profile-picture">
                         <div class="greetings">
-                            <p>Hi there,</p>
-                            <span id="profileName">prof-name</span>
+                            <span>Hi there,</span>
+                            <p>Morgan Oakley (@morgan)</p>
                         </div>
                     </div>
                     <div class="profileLinks">
@@ -61,69 +65,113 @@
                 </div>
             </div>
             <div class="content">
-                <div class="projectContainer">
+                <fieldset class="projectContainer">
+                    <legend>Your Projects</legend>
                     <div class="project card">
                         <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere metus ligula, eget interdum eros rutrum ut. Phasellus et ante tellus. Aenean et magna id ipsum condimentum convallis.</p>
+                        <div class="options">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-fork"></i>
+                        </div>
                     </div>
                     <div class="project card">
                         <h3>Less Cool Project</h3>
+                        <p>Fusce tincidunt, risus ac rutrum molestie, dolor orci maximus risus, eu commodo mi nibh ut metus. Proin ullamcorper venenatis accumsan.</p>
+                        <div class="options">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-fork"></i>
+                        </div>
                     </div>
                     <div class="project card">
                         <h3>Impossible App</h3>
+                        <p>Vestibulum pretium posuere dui, ut volutpat diam viverra non. Nam ex quam, congue vel tristique sed, bibendum in quam.</p>
+                        <div class="options">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-fork"></i>
+                        </div>
                     </div>
                     <div class="project card">
                         <h3>Easy Peasy App</h3>
+                        <p>Nullam scelerisque at nulla molestie varius. Vestibulum ornare vulputate massa vitae euismod. Sed placerat varius nibh in finibus. Vestibulum et tincidunt neque, ac tempus massa. </p>
+                        <div class="options">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-fork"></i>
+                        </div>
                     </div>
                     <div class="project card">
                         <h3>Add Blocker</h3>
+                        <p>Quisque dapibus sagittis vestibulum. Vivamus id felis non magna fermentum efficitur eu sed tellus. Aliquam porta scelerisque ligula, et placerat risus rutrum sed.</p>
+                        <div class="options">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-fork"></i>
+                        </div>
                     </div>
                     <div class="project card">
                         <h3>Money Maker</h3>
-                    </div>
-                </div>
-                <div class="announcementContainer card">
-                    <div class="announcement">
-                        <h4>Site Maintenance</h4>
-                        <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
-                    </div>
-                    <div class="announcement">
-                        <h4>Community Share Day</h4>
-                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan p</p>
-                    </div>
-                    <div class="announcement">
-                        <h4>Updated Privacy Policy</h4>
-                    </div>
-                </div>
-                <div class="trendingContainer card">
-                    <div class="trending">
-                        <img src="" alt="" class="avatar">
-                        <div class="trendingInfo">
-                            <p class="handle">@tegan</p>
-                            <span class="status">World Peace Builder</span>
+                        <p>Praesent vestibulum erat hendrerit pretium fermentum. Ut sollicitudin sagittis lacus, et euismod risus dictum id. Ut sodales mauris dui, at maximus nunc convallis lobortis.</p>
+                        <div class="options">
+                            <i class="fa-solid fa-heart-circle-plus"></i>
+                            <i class="fa-solid fa-eye"></i>
+                            <i class="fa-solid fa-code-fork"></i>
                         </div>
                     </div>
-                    <div class="trending">
-                        <img src="" alt="" class="avatar">
-                        <div class="trendingInfo">
-                            <p class="handle">@morgan</p>
-                            <span class="status">Super Cool Project</span>
+                </fieldset>
+                <fieldset class="announcementField">
+                    <legend>Announcements</legend>
+                    <div class="announcementContainer card">
+                        <div class="announcement">
+                            <h4>Site Maintenance</h4>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                        </div>
+                        <div class="announcement">
+                            <h4>Community Share Day</h4>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                        </div>
+                        <div class="announcement">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
                         </div>
                     </div>
-                    <div class="trending">
-                        <img src="" alt="" class="avatar">
-                        <div class="trendingInfo">
-                            <p class="handle">@kendal</p>
-                            <span class="status">Life Changing App</span>
+                </fieldset>
+                <fieldset class="trendingField">
+                    <legend>Trending</legend>
+                    <div class="trendingContainer card">
+                        <div class="trending">
+                            <img src="./images/female-user.png" alt="tegan" class="avatar">
+                            <div class="trendingInfo">
+                                <p class="handle">@tegan</p>
+                                <span class="status">World Peace Builder</span>
+                            </div>
+                        </div>
+                        <div class="trending">
+                            <img src="./images/male-user.png" alt="morgan" class="avatar">
+                            <div class="trendingInfo">
+                                <p class="handle">@morgan</p>
+                                <span class="status">Super Cool Project</span>
+                            </div>
+                        </div>
+                        <div class="trending">
+                            <img src="./images/male-user.png" alt="kendall" class="avatar">
+                            <div class="trendingInfo">
+                                <p class="handle">@kendall</p>
+                                <span class="status">Life Changing App</span>
+                            </div>
+                        </div>
+                        <div class="trending">
+                            <img src="./images/male-user.png" alt="alex" class="avatar">
+                            <div class="trendingInfo">
+                                <p class="handle">@alex</p>
+                                <span class="status">No Traffic Maker</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="trending">
-                        <img src="" alt="" class="avatar">
-                        <div class="trendingInfo">
-                            <p class="handle">@alex</p>
-                            <span class="status">No Traffic Maker</span>
-                        </div>
-                    </div>
-                </div>
+                </fieldset>
             </div>
         </div>
     </div>

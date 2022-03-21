@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     font-size: 16px;
 }
@@ -5,30 +9,48 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
 }
 
 .container{
     width: 100vw;
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .navContainer{
     width: 20%;
+    background-color: #0595e3;
+    color: #fff;
+    padding: 10px;
 }
 
-.navHeader{
-
-}
-
-.navHeader div{
-    width: 15px;
-    height: 15px;
+.navHeader i{
+    font-size: 2em;
+    margin-right: 10px;
 }
 
 .navHeader h1{
     display: inline-block;
-    font-size: 12px;
+    font-size: 1.6em;
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+}
+
+.verticalLinks ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 45px 0px 0px 15px;
+}
+
+.verticalLinks li{
+    margin: 1em 0px;
+    cursor: pointer;
+}
+
+.verticalLinks li>i{
+    margin-right: 10px;
 }
 
 .bodyContainer{
@@ -37,23 +59,47 @@ body{
     flex-direction: column;
 }
 
-.topHeader{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
+.header{
+    
 }
 
-.topHeader input{
-    height: 1.2em;
-    width: 50%;
+.topHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px;
+}
+
+.search{
+    width: 60%;
+    text-align: left;
+}
+
+.search input{
+    background-color: #ddd;
+    height: 1.5em;
+    width: 90%;
     padding: 5px;
-    border: 1px solid #000;
     border-radius: 0.5em;
-    margin: 8px 0px;
+    margin-left: 15px;
+}
+
+.userInfo{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.topHeader img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
 }
 
 .profileHeader{
+    padding: 8px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +107,29 @@ body{
 
 .profileInfo{
     display: flex;
-    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profileInfo img{
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.greetings span{
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin: 0px;
+    padding: 0px;
+}
+
+.greetings p{
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 0px;
+    padding: 0px;
 }
 
 .profileLinks{
@@ -74,21 +142,26 @@ body{
 
 .profileLinks li{
     display: inline-block;
-    background-color: blue;
+    background-color: #0595e3;
     color: #fff;
     border-radius: 1em;
     padding: 5px 25px;
     margin-left: 25px;
+    cursor: pointer;
 }
 
 .content{
+    padding: 20px;
     display: grid;
-    background-color: #ccc;
+    background-color: #ddd;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
 .projectContainer{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -98,27 +171,139 @@ body{
     grid-template-rows: repeat(3, 200px);
     row-gap: 15px;
     column-gap: 15px;
+}
 
+.projectContainer legend{
+    margin: 0px 0px 10px 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .project{
-    border-left: solid 5px yellow;
-    margin: 8px;
+    border-left: solid 8px #f7af05;
+    position: relative;
+}
+
+.project h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+.project p{
+    padding: 0px;
+    margin: 0px;
 }
 
 .card{
     background-color: #fff;
     border-radius: 10px;
-    padding: 5px 15px;
+    padding: 20px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.options{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.options i{
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.announcementField{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.announcementField legend{
+    margin: 0px 0px 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .announcementContainer{
     grid-row-start: 1;
     grid-column-start: 3;
+    margin: 0px 0px 20px 20px;
+    padding: 25px;
+}
+
+.announcement{
+    border-bottom: 1px solid #999;
+    margin: 20px 0px;
+}
+
+.announcement:first-child{
+    margin-top: 0px;
+}
+
+.announcement:last-child{
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.announcement h4{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.announcement p{
+    margin-top: 6px;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.trendingField{
+    border: 0px;
+    padding: 0px;
+}
+
+.trendingField legend{
+    margin: 0px 0px 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .trendingContainer{
     grid-row-start: 2;
     grid-column-start: 3;
+    margin: 0px 0px 20px 20px;
+    padding: 25px;
+}
+
+.trending{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.trending:last-child{
+    margin-bottom: 0px;
+}
+
+.trending img{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.trendingInfo p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.9em;
+    font-weight: 800;
+}
+
+.trendingInfo span{
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.8em;
+    font-weight: 200;
 }
