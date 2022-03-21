@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://kit.fontawesome.com/d9529804a1.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title>Admin Dashboard</title>
@@ -12,7 +13,7 @@
     <div class="container">
         <div class="navContainer">
             <div class="navHeader">
-                <img src="" alt="main logo" id="logo">
+                <div><i class="fa-solid fa-frame"></i></div>
                 <h1 class="title">Dashboard</h1>
             </div>
             <div class="mainLinks">
@@ -33,90 +34,94 @@
                 </ul>
             </div>
         </div>
-        <div class="header">
-            <div class="topHeader">
-                <p>Search</p>
-                <input type="text" name="searchValue" id="search">
-                <span id="notification">notf-icon</span>
-                <img src="" alt="small-profile-picture">
-                <span id="profileName">prof-name</span>
-            </div>
-            <div class="profileHeader">
-                <div class="profileInfo">
-                    <img src="" alt="large-profile-picture">
-                    <div class="greetings">
-                        <p>Hi there,</p>
-                        <span id="profileName">prof-name</span>
+        <div class="bodyContainer">
+            <div class="header">
+                <div class="topHeader">
+                    <p><i class="fa-solid fa-magnifying-glass"></i></p>
+                    <input type="text" name="searchValue" id="search">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="" alt="small-profile-picture">
+                    <span id="profileName">prof-name</span>
+                </div>
+                <div class="profileHeader">
+                    <div class="profileInfo">
+                        <img src="" alt="large-profile-picture">
+                        <div class="greetings">
+                            <p>Hi there,</p>
+                            <span id="profileName">prof-name</span>
+                        </div>
+                    </div>
+                    <div class="profileLinks">
+                        <ul>
+                            <li>New</li>
+                            <li>Upload</li>
+                            <li>Share</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="profileLinks">
-                    <ul>
-                        <li>New</li>
-                        <li>Upload</li>
-                        <li>Share</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-        <div class="content">
-            <div class="projectContainer">
-                <div class="project">
-                    <h3>Super Cool Project</h3>
-                </div>
-                <div class="project">
-                    <h3>Less Cool Project</h3>
-                </div>
-                <div class="project">
-                    <h3>Impossible App</h3>
-                </div>
-                <div class="project">
-                    <h3>Easy Peasy App</h3>
-                </div>
-                <div class="project">
-                    <h3>Add Blocker</h3>
-                </div>
-                <div class="project">
-                    <h3>Money Maker</h3>
-                </div>
-            </div>
-            <div class="announcementContainer">
-                <div class="announcement">
-                    <h4>Site Maintenance</h4>
-                </div>
-                <div class="announcement">
-                    <h4>Community Share Day</h4>
-                </div>
-                <div class="announcement">
-                    <h4>Updated Privacy Policy</h4>
-                </div>
-            </div>
-            <div class="trendingContainer">
-                <div class="trending">
-                    <img src="" alt="" class="avatar">
-                    <div class="trendingInfo">
-                        <p class="handle">@tegan</p>
-                        <span class="status">World Peace Builder</span>
+            <div class="content">
+                <div class="projectContainer">
+                    <div class="project card">
+                        <h3>Super Cool Project</h3>
+                    </div>
+                    <div class="project card">
+                        <h3>Less Cool Project</h3>
+                    </div>
+                    <div class="project card">
+                        <h3>Impossible App</h3>
+                    </div>
+                    <div class="project card">
+                        <h3>Easy Peasy App</h3>
+                    </div>
+                    <div class="project card">
+                        <h3>Add Blocker</h3>
+                    </div>
+                    <div class="project card">
+                        <h3>Money Maker</h3>
                     </div>
                 </div>
-                <div class="trending">
-                    <img src="" alt="" class="avatar">
-                    <div class="trendingInfo">
-                        <p class="handle">@morgan</p>
-                        <span class="status">Super Cool Project</span>
+                <div class="announcementContainer card">
+                    <div class="announcement">
+                        <h4>Site Maintenance</h4>
+                        <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                    </div>
+                    <div class="announcement">
+                        <h4>Community Share Day</h4>
+                        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan p</p>
+                    </div>
+                    <div class="announcement">
+                        <h4>Updated Privacy Policy</h4>
                     </div>
                 </div>
-                <div class="trending">
-                    <img src="" alt="" class="avatar">
-                    <div class="trendingInfo">
-                        <p class="handle">@kendal</p>
-                        <span class="status">Life Changing App</span>
+                <div class="trendingContainer card">
+                    <div class="trending">
+                        <img src="" alt="" class="avatar">
+                        <div class="trendingInfo">
+                            <p class="handle">@tegan</p>
+                            <span class="status">World Peace Builder</span>
+                        </div>
                     </div>
-                </div>
-                <div class="trending">
-                    <img src="" alt="" class="avatar">
-                    <div class="trendingInfo">
-                        <p class="handle">@alex</p>
-                        <span class="status">No Traffic Maker</span>
+                    <div class="trending">
+                        <img src="" alt="" class="avatar">
+                        <div class="trendingInfo">
+                            <p class="handle">@morgan</p>
+                            <span class="status">Super Cool Project</span>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <img src="" alt="" class="avatar">
+                        <div class="trendingInfo">
+                            <p class="handle">@kendal</p>
+                            <span class="status">Life Changing App</span>
+                        </div>
+                    </div>
+                    <div class="trending">
+                        <img src="" alt="" class="avatar">
+                        <div class="trendingInfo">
+                            <p class="handle">@alex</p>
+                            <span class="status">No Traffic Maker</span>
+                        </div>
                     </div>
                 </div>
             </div>
